@@ -10,6 +10,8 @@ nota_3 = int(input("Digite a nota 3: "))
 media = (nota_1 + nota_2 + nota_3) / 3
 
 if media >= 7:
-    print("Aluno aprovado!")
-if media < 7: 
-    print("Aluno reprovado!")
+    print("Aluno aprovado!", media)
+else:
+    print("Aluno reprovado!", media)
+
+
