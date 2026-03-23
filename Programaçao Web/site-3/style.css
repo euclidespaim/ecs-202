@@ -1,0 +1,29 @@
+/* 1. Remove margens padrão e garante altura total */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* 2. Container vertical */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh; /* garante altura da tela */
+}
+
+/* 3. Main ocupa o espaço livre */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Estética */
+header, footer {
+  background: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}

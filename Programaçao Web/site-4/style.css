@@ -1,0 +1,22 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: blue;
+    
+    width: 50px;
+    height: 50px;
+    
+    margin: 50px;
+    
+    border: 5px solid orangered;
+
+    padding: 50px;
+
+    border-radius: 50%;
+
+}
