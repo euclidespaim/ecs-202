@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    width: 35%;
+}
+
+ol {
+    text-align: center;
+    background-color: yellow;
+}

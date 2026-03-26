@@ -15,8 +15,14 @@
     
     border: 5px solid orangered;
 
-    padding: 50px;
+    padding: 100px;
 
     border-radius: 50%;
+
+    background-image: url(img/img-1.jpg);
+    background-size: cover;
+    background-position: center;
+
+
 
 }
