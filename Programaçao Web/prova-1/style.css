@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: aqua;
+
+}
+
+#cartao{
+    border: 3px solid black;
+    background-color: tomato;
+    margin: 150px;
+    padding: 30px;
+    
+}
+
+img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+
+ul li{
+    list-style: none;
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+footer {
+    margin: 290px 0 0 0;
+    background-color: black;
+    color: white;
+    padding: 35px;
+    font-size: 24px;
+}
+
