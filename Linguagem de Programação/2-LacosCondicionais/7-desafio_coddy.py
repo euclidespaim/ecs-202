@@ -1,8 +1,3 @@
-
-
-
-
-
 idade = int(input("Digite sua idade: "))
 tem_licenca = input("Você tem carteira? Digite Sim ou Não: ")
 
