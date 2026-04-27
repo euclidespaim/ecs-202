@@ -1,3 +1,25 @@
-/* Crie uma div com background-color: blue; 
-e posicione ela a 0 px da margem direita e 0 px 
-da margem inferior */
+/* 
+Crie uma div blue 50x50 e posicione ela a 0px 
+da margem direita e 0px da margem inferior
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.azul {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+
+
+    
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+
+
+}
+
