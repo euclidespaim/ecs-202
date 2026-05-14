@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+body {
+    perspective: 1000px
+}
 
 div {
     position: absolute;
@@ -13,5 +16,5 @@ div {
     height: 200px;
     background-color: blueviolet;
     
-    transform: rotateZ(45deg);
+    transform: rotateY(45deg);
 }

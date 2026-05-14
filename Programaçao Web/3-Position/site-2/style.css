@@ -14,12 +14,11 @@ da margem direita e 0px da margem inferior
     bottom: 50%;
     right: 50%;
 
-
-    
+    border-radius: 50%;
+        
     width: 150px;
     height: 150px;
-    background-color: blue;
-
+    border: 2px solid blue;
 
 }
 

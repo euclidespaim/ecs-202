@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Estilo Base para as 5 Divs */
+div {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 2px solid lime;
+    box-shadow: 0 0 15px lime;
+    transition: 0.5s;
+}
+
+/* Posicionamento nos Cantos */
+#topo-esq  { top: 25px; left: 25px; }
+#topo-dir  { top: 25px; right: 25px; }
+#baixo-esq { bottom: 25px; left: 25px; }
+#baixo-dir { bottom: 25px; right: 25px; }
+
+/* Posicionamento Centralizado */
+#centro {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-color: yellow;
+    box-shadow: 0 0 15px yellow;
+}
+
+/* Interação para as outras 4 divs (as dos cantos) */
+/* Usamos :not(#centro) para isolar o comportamento */
+div:hover {
+    background-color: yellow;
+    box-shadow: 0 0 90px white;
+    transform: rotate(45deg); /* O efeito de giro que combinamos antes */
+    transition: 0.5s; /* Transição mais rápida para os cantos */
+}
+
+/* Interação */
+#centro:hover {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    transition: 5s;
+    border-color: white;
+    box-shadow: 0 0 90px white;
+    transform: translate(-50%, -50%) rotate(360deg);
+}

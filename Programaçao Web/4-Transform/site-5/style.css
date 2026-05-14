@@ -1,0 +1,58 @@
+/* Configuração do Espaço */
+body {
+    background-color: #050505;
+    margin: 0;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Planeta Centralizado */
+#planeta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background-color: dodgerblue;
+    border-radius: 50%;
+    box-shadow: 0 0 30px blue;
+    z-index: 2; /* Garante que o planeta fique na frente */
+}
+
+/* A Órbita (Linha invisível que segura o satélite) */
+#orbita {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px; /* Diâmetro da órbita */
+    height: 300px;
+    transform: translate(-50%, -50%);
+    
+    /* Animação de rotação infinita e constante */
+    animation: rodar 5s linear infinite;
+}
+
+/* O Satélite (Filho da órbita) */
+#satelite {
+    position: absolute;
+    top: 50%;
+    right: 0; /* Coloca o satélite na ponta direita da órbita */
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    box-shadow: 0 0 10px red;
+}
+
+/* Roteiro da Animação */
+@keyframes rodar {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
