@@ -6,7 +6,8 @@ carros = [
     "hilux", 
     "corcel", 
     "opala", 
-    "uno"
+    "uno",
+    "chevete"
     ]
 
 for y in carros:

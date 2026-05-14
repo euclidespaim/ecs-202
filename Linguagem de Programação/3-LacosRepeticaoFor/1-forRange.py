@@ -1,7 +1,8 @@
 # laço for é um laço de repetição usado 
 # quando sabemos o número de iterações 
 # necessárias. 
+
 # Sintaxe: range(início, fim, passo)
 
-for x in range(10):
+for x in range(0 , 11, 2):
     print(x)
