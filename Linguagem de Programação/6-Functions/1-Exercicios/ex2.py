@@ -12,4 +12,4 @@ def verificar_nota(media):
     elif media < 5:
         print("Reprovado!")
 
-#verificar_nota(4)
+verificar_nota(7)
