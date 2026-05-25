@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: blue;
+    padding: 20px;
+}
+
+.items {
+
+    padding: 30px;
+    background-color: white;
+    margin: 5px;
+
+}
