@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: blue;
+    padding: 20px;
+    height: 100vh;
+}
+
+.items {
+
+    padding: 40px;
+    background-color: white;
+    margin: 5px;
+
+}
