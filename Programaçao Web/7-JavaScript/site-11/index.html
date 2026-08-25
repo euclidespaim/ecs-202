@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Bloco de Notas</title>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: white;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+        }
+
+        .painel {
+            background-color: #1e293b;
+            padding: 20px;
+            border-radius: 12px;
+            width: 350px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #38bdf8;
+            text-align: center;
+        }
+
+        /* Agrupando o input e o botão lado a lado */
+        .controles {
+            display: flex;
+            gap: 10px;
+        }
+
+        input {
+            flex: 1; /* Faz o input ocupar o espaço que sobrar */
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #475569;
+            background-color: #0f172a;
+            color: white;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #10b981;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        ul {
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            color: #cbd5e1;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="painel">
+        <h2>Minhas Tarefas</h2>
+        
+        <div class="controles">
+            <input type="text" id="input-tarefa" placeholder="Digite uma tarefa...">
+            <button id="btn-adicionar">Adicionar</button>
+        </div>
+        
+        <!-- A lista começa vazia. O JS vai injetar as <li> aqui dentro -->
+        <ul id="lista-tarefas"></ul>
+    </div>
+
+</body>
+</html>
