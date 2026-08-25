@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Painel de Logs</title>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: white;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+        }
+
+        button {
+            padding: 12px 24px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        button:hover {
+            background-color: #1d4ed8;
+        }
+
+        /* A tela escura do terminal */
+        .terminal {
+            width: 400px;
+            height: 300px;
+            background-color: #000000;
+            border: 2px solid #334155;
+            border-radius: 8px;
+            padding: 15px;
+            overflow-y: auto; /* Cria barra de rolagem se encher */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        /* A classe que os alunos vão aplicar via JS */
+        .linha-log {
+            color: #10b981; /* Verde clássico de terminal */
+            font-family: monospace; /* Fonte de código */
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            border-bottom: 1px dashed #1e293b;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Monitoramento de Rede</h2>
+    
+    <button id="btn-registrar">Registrar Acesso</button>
+    
+    <div id="tela-terminal" class="terminal">
+        <!-- Os logs vão aparecer aqui dentro -->
+    </div>
+
+</body>
+</html>
