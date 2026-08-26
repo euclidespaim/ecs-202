@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerador de Crachá</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Lado Esquerdo: O Formulário -->
+    <div class="painel">
+        <h2>Cadastro</h2>
+        <form id="form-cadastro">
+            <label>Nome do Funcionário:</label>
+            <input type="text" id="input-nome" placeholder="Digite o nome..." required>
+
+            <label>Setor:</label>
+            <select id="input-setor">
+                <option value="Tecnologia da Informação">TI</option>
+                <option value="Recursos Humanos">RH</option>
+                <option value="Diretoria">Diretoria</option>
+            </select>
+
+            <button type="submit">Gerar Crachá</button>
+        </form>
+    </div>
+
+    <!-- Lado Direito: O Resultado -->
+    <div class="cracha">
+        <div class="foto-perfil"></div>
+        <div id="nome-cracha">Nome Aqui</div>
+        <div id="setor-cracha">Setor Aqui</div>
+    </div>
+
+    <!-- O Script vai aqui -->
+
+</body>
+</html>
