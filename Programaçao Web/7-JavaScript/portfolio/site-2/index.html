@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício - Semáforo Inteligente</title>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: white;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* O corpo do semáforo */
+        .semaforo {
+            background-color: #1e293b;
+            padding: 20px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            border: 4px solid #334155;
+            margin-bottom: 20px;
+        }
+
+        /* As luzes (estado apagado por padrão) */
+        .luz {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: #334155; 
+            transition: 0.3s;
+        }
+
+        /* Classes de luzes acesas com brilho */
+        .acesa-vermelha {
+            background-color: #ef4444;
+            box-shadow: 0 0 25px #ef4444;
+        }
+
+        .acesa-amarela {
+            background-color: #eab308;
+            box-shadow: 0 0 25px #eab308;
+        }
+
+        .acesa-verde {
+            background-color: #22c55e;
+            box-shadow: 0 0 25px #22c55e;
+        }
+
+        .botoes {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px 15px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            border-radius: 6px;
+            color: white;
+        }
+
+        #btn-vermelho { background-color: #ef4444; }
+        #btn-amarelo { background-color: #ca8a04; }
+        #btn-verde { background-color: #16a34a; }
+    </style>
+</head>
+<body>
+
+    <!-- Estrutura do Semáforo -->
+    <div class="semaforo">
+        <div id="luz-vermelha" class="luz"></div>
+        <div id="luz-amarela" class="luz"></div>
+        <div id="luz-verde" class="luz"></div>
+    </div>
+
+    <!-- Botões de Controle -->
+    <div class="botoes">
+        <button id="btn-vermelho">Vermelho</button>
+        <button id="btn-amarelo">Amarelo</button>
+        <button id="btn-verde">Verde</button>
+    </div>
+
+    <!-- Escreva o seu código JavaScript abaixo -->
+    <script src="script.js"></script>
+</body>
+</html>

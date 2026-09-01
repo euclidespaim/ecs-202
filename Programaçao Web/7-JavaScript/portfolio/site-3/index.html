@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício - Robô de Humor</title>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: white;
+            font-family: monospace; /* Fonte com estilo de computador/robô */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* O rosto do robô */
+        #rosto-robo {
+            width: 250px;
+            height: 200px;
+            background-color: gray;
+            border-radius: 30px;
+            border: 8px solid #334155;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+            
+            font-size: 3rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 30px;
+            transition: 0.3s; /* Transição suave de cores */
+        }
+
+        .botoes {
+            display: flex;
+            gap: 15px;
+        }
+
+        button {
+            padding: 12px 20px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            background-color: #475569;
+        }
+
+        button:hover {
+            background-color: #64748b;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- O Rosto do Robô -->
+    <div id="rosto-robo">( o_o )</div>
+
+    <!-- Botões de Ação -->
+    <div class="botoes">
+        <button id="btn-carinho">Fazer Carinho</button>
+        <button id="btn-bronca">Dar Bronca</button>
+        <button id="btn-dormir">Dormir</button>
+    </div>
+
+    <!-- Escreva o seu código JavaScript abaixo -->
+    <script src="script.js"></script>
+</body>
+</html>
