@@ -1,0 +1,39 @@
+ body {
+     background-color: #0f172a;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     margin: 0;
+     color: white;
+     font-family: sans-serif;
+     text-align: center;
+ }
+
+ /* O limite do mapa */
+ .espaco {
+     width: 800px;
+     height: 600px;
+     background-color: #1e293b;
+     border: 4px solid #334155;
+     border-radius: 10px;
+
+     /* FUNDAMENTAL: Prende a nave dentro dessa caixa */
+     position: relative;
+     overflow: hidden;
+ }
+
+ /* O elemento que vamos mover */
+ #nave {
+     font-size: 2.5rem;
+
+     /* FUNDAMENTAL: Permite mover livremente usando Top e Left */
+     position: absolute;
+
+     /* Posição inicial no meio do mapa (400/2 - tamanho da nave) */
+     top: 180px;
+     left: 180px;
+
+     /* Deixa o movimento suave */
+     transition: top 0.1s, left 0.1s;
+ }

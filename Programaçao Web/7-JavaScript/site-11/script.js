@@ -16,3 +16,9 @@ btnAdicionar.addEventListener('click', function(){
         inputTarefa.focus();
     }
 })
+
+
+btnAdicionar.addEventListener('keydown', function(event){
+    
+
+})
