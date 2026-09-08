@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Arquivos</title>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* O Arquivo na Tela */
+        .arquivo {
+            background-color: #1e293b;
+            border: 2px solid #334155; /* Borda cinza padrão */
+            border-radius: 12px;
+            width: 200px;
+            padding: 30px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.2s;
+            
+            /* TRUQUE DE OURO: Evita que o duplo clique selecione o texto de azul! */
+            user-select: none; 
+        }
+
+        .arquivo:hover {
+            background-color: #334155;
+        }
+
+        #icone {
+            font-size: 4rem;
+            margin-bottom: 15px;
+        }
+
+        #nome-arquivo {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="caixa-arquivo" class="arquivo">
+        <div id="icone">🔒</div>
+        <div id="nome-arquivo">dados_banco.txt</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
