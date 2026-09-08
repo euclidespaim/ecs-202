@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Segurança Anti-Cópia</title>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            font-family: monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .painel {
+            background-color: #1e293b;
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+            width: 450px;
+            text-align: center;
+        }
+
+        .titulo {
+            color: #38bdf8;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        /* O texto que não pode ser copiado */
+        #dado-sensivel {
+            background-color: #020617;
+            color: #10b981;
+            padding: 15px;
+            font-size: 1.5rem;
+            border: 1px dashed #475569;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+
+        /* O Alerta (Invisível por padrão) */
+        #alerta-seguranca {
+            display: none;
+            background-color: #7f1d1d; /* Fundo vermelho escuro */
+            color: #fca5a5; /* Texto vermelho claro */
+            padding: 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            border: 1px solid #ef4444;
+            animation: piscar 0.5s alternate infinite; /* Animação de sirene */
+        }
+
+        @keyframes piscar {
+            0% { opacity: 0.8; }
+            100% { opacity: 1; transform: scale(1.02); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="painel">
+        <div class="titulo">Servidor de Autenticação</div>
+        
+        <p>Chave Mestra de Acesso:</p>
+        
+        <!-- A div onde o evento vai acontecer -->
+        <div id="dado-sensivel">
+            AX99-B74Q-K9L2-M00X
+        </div>
+
+        <!-- A mensagem de erro que o JS vai revelar -->
+        <div id="alerta-seguranca">
+            ⚠️ ALERTA: Tentativa de cópia bloqueada!
+        </div>
+    </div>
+
+</body>
+</html>

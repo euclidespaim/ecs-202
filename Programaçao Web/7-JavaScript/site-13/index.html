@@ -2,37 +2,107 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Gerador de Crachá</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Gerador de Crachá Pro</title>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: white;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            padding-top: 100px;
+        }
+
+        /* O Painel do Formulário */
+        .painel {
+            background-color: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+        }
+
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #475569;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #3b82f6;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            margin-top: 15px;
+        }
+
+        /* O Visual do Crachá */
+        .cracha {
+            background-color: #f8fafc;
+            color: #0f172a;
+            width: 250px;
+            height: 380px;
+            border-radius: 15px;
+            border-top: 30px solid #ef4444;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+
+        /* O CSS da Imagem */
+        .foto-perfil {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 20px auto;
+            border: 4px solid #cbd5e1;
+            
+            /* O object-fit garante que a foto não fique esmagada */
+            object-fit: cover; 
+            background-color: #e2e8f0; /* Cor de fundo enquanto não tem foto */
+        }
+
+        #nome-cracha { font-size: 1.5rem; font-weight: bold; }
+        #setor-cracha { color: #64748b; margin-top: 10px; font-size: 1.1rem; }
+    </style>
 </head>
 <body>
 
-    <!-- Lado Esquerdo: O Formulário -->
+    <!-- Formulário -->
     <div class="painel">
-        <h2>Cadastro</h2>
+        <h2>Novo Cadastro</h2>
         <form id="form-cadastro">
+            
+            <label>Link da Foto (URL):</label>
+            <input type="url" id="input-foto" placeholder="Cole o link da imagem..." required>
+
             <label>Nome do Funcionário:</label>
             <input type="text" id="input-nome" placeholder="Digite o nome..." required>
 
             <label>Setor:</label>
             <select id="input-setor">
-                <option value="Tecnologia da Informação">TI</option>
-                <option value="Recursos Humanos">RH</option>
-                <option value="Diretoria">Diretoria</option>
+                <option value="Tecnologia">Tecnologia</option>
+                <option value="Suporte">Suporte Técnico</option>
+                <option value="Segurança">Segurança da Informação</option>
             </select>
 
-            <button type="submit">Gerar Crachá</button>
+            <button type="submit">Imprimir Crachá</button>
         </form>
     </div>
 
-    <!-- Lado Direito: O Resultado -->
+    <!-- O Crachá que será atualizado -->
     <div class="cracha">
-        <div class="foto-perfil"></div>
+        <!-- Começamos com uma imagem vazia ou um ícone padrão -->
+        <img id="foto-cracha" class="foto-perfil" src="" alt="Foto do Funcionário">
+        
         <div id="nome-cracha">Nome Aqui</div>
         <div id="setor-cracha">Setor Aqui</div>
     </div>
-
-    <!-- O Script vai aqui -->
 
 </body>
 </html>
