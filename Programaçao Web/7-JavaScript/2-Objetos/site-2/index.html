@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil do Jogador</title>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .cartao {
+            background-color: #1e293b;
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid #3b82f6;
+            text-align: center;
+            width: 250px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+        }
+
+        .avatar {
+            font-size: 4rem;
+            margin-bottom: 10px;
+        }
+
+        .nome {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #38bdf8;
+            margin-bottom: 5px;
+        }
+
+        .nivel-caixa {
+            background-color: #0f172a;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 1.2rem;
+            color: #94a3b8;
+        }
+
+        #valor-nivel {
+            font-size: 2rem;
+            color: #10b981; /* Verde XP */
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #10b981;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cartao">
+        <div class="avatar">🥷</div>
+        <div class="nome" id="nome-tela">CyberNinja</div>
+        
+        <div class="nivel-caixa">
+            Nível Atual <br>
+            <span id="valor-nivel">1</span>
+        </div>
+
+        <button id="btn-xp">Ganhar XP 🌟</button>
+    </div>
+
+</body>
+</html>
