@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cofre Digital</title>
+    <style>
+        body { background-color: #0f172a; color: white; font-family: monospace; text-align: center; padding-top: 100px; }
+        .painel { background-color: #1e293b; display: inline-block; padding: 30px; border-radius: 10px; border: 2px solid #334155; }
+        input { padding: 10px; font-size: 1.2rem; margin-bottom: 15px; border-radius: 5px; border: none; text-align: center; }
+        button { padding: 10px 20px; font-size: 1.1rem; background-color: #3b82f6; color: white; border: none; cursor: pointer; border-radius: 5px; }
+        #visor { margin-top: 20px; font-size: 1.5rem; font-weight: bold; color: #94a3b8; }
+    </style>
+</head>
+<body>
+
+    <div class="painel">
+        <h2>🔒 COFRE SISTEMA</h2>
+        <input type="password" id="input-senha" placeholder="Digite a senha">
+        <br>
+        <button id="btn-abrir">Desbloquear</button>
+        <div id="visor">Aguardando senha...</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
