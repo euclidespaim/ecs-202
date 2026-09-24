@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciador de Bateria</title>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: white;
+            font-family: monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .painel {
+            background-color: #1e293b;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #475569;
+            width: 350px;
+            text-align: center;
+        }
+
+        /* O contorno da pilha/bateria */
+        .caixa-bateria {
+            width: 100%;
+            height: 40px;
+            background-color: #020617;
+            border: 2px solid #64748b;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            overflow: hidden; /* Mantém o verde dentro das bordas arredondadas */
+        }
+
+        /* A energia verde (É isso que o JS vai encolher!) */
+        #barra-energia {
+            width: 100%; /* Começa cheia */
+            height: 100%;
+            background-color: #10b981;
+            transition: width 0.3s ease-out; /* Deixa o movimento suave */
+        }
+
+        .controles {
+            display: flex;
+            gap: 15px;
+        }
+
+        button {
+            flex: 1; /* Faz os botões dividirem o espaço igual */
+            padding: 12px;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        #btn-usar { background-color: #ef4444; color: white; }
+        #btn-carga { background-color: #3b82f6; color: white; }
+    </style>
+</head>
+<body>
+
+    <div class="painel">
+        <h2>STATUS DA BATERIA</h2>
+        
+        <div class="caixa-bateria">
+            <div id="barra-energia"></div>
+        </div>
+
+        <div class="controles">
+            <button id="btn-usar">Escanear (-20%)</button>
+            <button id="btn-carga">Conectar na Tomada</button>
+        </div>
+    </div>
+
+</body>
+</html>
