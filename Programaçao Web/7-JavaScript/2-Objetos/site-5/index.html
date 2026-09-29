@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #0f172a;
+            color: white;
+            font-family: monospace;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .loja {
+            background-color: #1e293b;
+            display: inline-block;
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid #3b82f6;
+        }
+
+        .dado {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #94a3b8;
+        }
+
+        .destaque {
+            color: #38bdf8;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #10b981;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+    <title>O Mercado Cyberpunk</title>
+</head>
+
+<body>
+    <div class="loja">
+        <h2>MERCADO CLANDESTINO</h2>
+        <div class="dado">Saldo: <span class="destaque" id="tela-saldo">200</span> Criptos</div>
+        <div class="dado">Inventário: <span class="destaque" id="tela-chips">0</span> Chips</div>
+
+        <button id="btn-comprar">Comprar Chip (50 Criptos)</button>
+    </div>
+</body>
+</html>
