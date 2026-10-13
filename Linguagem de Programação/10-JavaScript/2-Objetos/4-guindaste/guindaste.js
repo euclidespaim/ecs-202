@@ -4,7 +4,7 @@ const guindaste = {
     limiteSeguranca: 50
 }
 
-consolole.log("Operador: ", guindaste.operador)
+console.log("Operador: ", guindaste.operador)
 
 for (let volta = 1; volta <= 4; volta++){
     

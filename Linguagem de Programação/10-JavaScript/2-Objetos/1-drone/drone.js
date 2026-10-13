@@ -5,7 +5,7 @@ const drone = {
 
     ativarCamera() {
         this.cameraLigada = true;
-        console.log("Câmera do drone " + this.modelo + " " + this.cameraLigada + "!")
+        console.log("Câmera do drone " + this.modelo + " ativada!")
     }
 }
 

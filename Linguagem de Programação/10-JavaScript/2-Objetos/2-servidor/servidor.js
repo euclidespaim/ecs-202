@@ -21,5 +21,5 @@ const servidorCentral = {
         console.log(this.status)
     }
 }
-// servidorCentral.verificarSistema()
-// servidorCentral.imprimirRelatorio()
+servidorCentral.verificarSistema()
+servidorCentral.imprimirRelatorio()
