@@ -4,20 +4,20 @@ const caminhao = {
 
     abastecer(litros){
         if (this.combustivelAtual + litros > this.capacidadeTanque){
-            return "ABASTECIMENTO NEGADO: O tanque vai transbordar! Cabem apenas"+ this.capacidadeTanque +"litros."
+            return "ABASTECIMENTO NEGADO: O tanque vai transbordar! Cabem apenas " + (this.capacidadeTanque - this.combustivelAtual) + " litros."
         } else {
             this.combustivelAtual += litros;
-            return "SUCESSO: Tanque abastecido. Combustível atual:" + this.combustivelAtual +" litros."
+            return "SUCESSO: Tanque abastecido. Combustível atual: " + this.combustivelAtual + " litros."
         }
     },
 
     viajar(km) {
-        litrosNecessarios = km * 2
+        let litrosNecessarios = km * 2
         if (litrosNecessarios > this.combustivelAtual){
-            return "VIAGEM CANCELADA: Combustível insuficiente para"+ km +"km."
+            return "VIAGEM CANCELADA: Combustível insuficiente para " + km + " km."
         } else {
             this.combustivelAtual -= litrosNecessarios
-            return "SUCESSO: Viagem de X km concluída. Combustível restante: Y litros."
+            return "SUCESSO: Viagem de " + km + " km concluída. Combustível restante: " + this.combustivelAtual + " litros."
         }
     }
 } 
