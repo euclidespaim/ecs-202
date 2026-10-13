@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body { 
+    background-color: #0f172a; 
+    color: white; 
+    font-family: monospace; 
+    display: flex;
+    justify-content: center;
+    padding-top: 50px; 
+    margin: 0;
+}
+
+.painel { 
+    background-color: #1e293b; 
+    padding: 40px; 
+    border-radius: 12px; 
+    border: 2px solid #475569; 
+    width: 350px; 
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+}
+
+.visor { 
+    margin-bottom: 25px; 
+    color: #94a3b8; 
+    display: flex;
+    flex-direction: column;
+}
+
+#valor-temp { 
+    font-size: 4rem; 
+    font-weight: bold; 
+    color: #10b981; /* Verde inicial */
+    transition: color 0.3s ease; 
+}
+
+#status-txt { 
+    font-size: 1.2rem; 
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+    color: #10b981; /* Verde inicial */
+    font-weight: bold;
+}
+
+.controles { 
+    display: flex; 
+    flex-direction: column;
+    gap: 10px; 
+}
+
+button { 
+    padding: 15px; 
+    font-size: 1rem; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    transition: 0.2s; 
+}
+
+#btn-carga { 
+    background-color: #ef4444; 
+    color: white; 
+}
+
+#btn-vento { 
+    background-color: #3b82f6; 
+    color: white; 
+}
+
+button:active { 
+    transform: scale(0.95); 
+}
+    </style>
+    <title>Avaliação - 202</title>
+</head>
+<body>
+    <div class="painel">
+    <h2>NÚCLEO DO SERVIDOR</h2>
+    <div class="visor">
+        <span id="valor-temp">40°C</span>
+        <span id="status-txt">ESTÁVEL</span>
+    </div>
+    <div class="controles">
+        <button id="btn-vento">Ativar Ventoinhas (-15°C)</button>
+        <button id="btn-carga">Simular Carga (+15°C)</button>
+    </div>
+</div>
+</body>
+</html>
