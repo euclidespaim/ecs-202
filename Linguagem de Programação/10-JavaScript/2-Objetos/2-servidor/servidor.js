@@ -8,7 +8,7 @@ const servidorCentral = {
     status: "online",
     temperatura: 85,
 
-    verficarSistema() {
+    verificarSistema() {
         if (this.temperatura > 80) {
             dispararAlerta("Temperatura acima de 80 ºC")
             this.status = "offline"
@@ -21,5 +21,5 @@ const servidorCentral = {
         console.log(this.status)
     }
 }
-// servidorCentral.verficarSistema()
+// servidorCentral.verificarSistema()
 // servidorCentral.imprimirRelatorio()
