@@ -1,4 +1,4 @@
-# 9- O Controle de Carga do Navio (Validação e Múltiplos Métodos)
+# O Controle de Carga do Navio (Validação e Múltiplos Métodos)
 
 **Objetivo:** Aprender a proteger os dados do objeto. O aluno criará métodos que verificam regras matemáticas **antes** de alterar as propriedades com o `this`, evitando que o sistema entre em um estado inválido (como ter peso negativo ou ultrapassar o limite).
 

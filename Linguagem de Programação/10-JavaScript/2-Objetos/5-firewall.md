@@ -1,4 +1,4 @@
-# 8- O Sistema de Firewall (Revisão de Lógica e Objetos)
+# O Sistema de Firewall (Revisão de Lógica e Objetos)
 
 **Objetivo:** Trabalhar apenas com regras de negócio na memória. O aluno deve manipular propriedades usando `this`, criar lógicas condicionais e `return`, testando tudo no console sem mexer na tela.
 

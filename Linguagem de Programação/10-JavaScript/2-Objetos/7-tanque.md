@@ -1,4 +1,4 @@
-# 10- O Tanque do Caminhão (Validação e Múltiplos Métodos)
+# O Tanque do Caminhão (Validação e Múltiplos Métodos)
 
 **Objetivo:** Praticar a proteção dos dados do objeto, usando métodos que verificam as regras **antes** de alterar as propriedades com o `this`. Desta vez, um dos métodos precisa fazer um cálculo antes de decidir se a operação pode acontecer.
 
