@@ -2,7 +2,7 @@ const sensorTermico = {
     temperatura: 40,
     limiteCritico: 70,
 
-    alteraTemperartura(valor){
+    alterarTemperartura(valor){
         this.temperatura += valor;
 
         if (this.temperatura >= this.limiteCritico){
@@ -32,11 +32,11 @@ function atualizarTela(resposta) {
 }
 
 btnCarga.addEventListener('click', function(){
-    let resposta = sensorTermico.alteraTemperartura(15);
+    let resposta = sensorTermico.alterarTemperartura(15);
     atualizarTela(resposta);
 })
 
 btnVento.addEventListener('click', function(){
-    let resposta = sensorTermico.alteraTemperartura(-15);
+    let resposta = sensorTermico.alterarTemperartura(-15);
     atualizarTela(resposta);
 })
