@@ -20,9 +20,8 @@ function Conta(dono, saldo) {
     }
 }
 
-
 const ana = new Conta("Ana", 100);
 const beto = new Conta("Beto", 50);
 
-ana.transferir(beto, 30);   // ?
-beto.transferir(ana, 200);  // ?
+ana.transferir(beto, 30);   // 
+beto.transferir(ana, 200);  // 
